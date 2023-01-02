@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className="flex w-screen justify-center items-center h-screen">
+        <div className="flex w-screen  justify-end items-center h-screen">
           <div className=" border rounded-lg bg-yellow-100 border-black p-4 cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-200 duration-300">
             <div className=" ">
               <img
