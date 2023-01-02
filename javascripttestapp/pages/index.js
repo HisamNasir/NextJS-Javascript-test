@@ -1,3 +1,6 @@
+
+
+
 import Head from "next/head";
 import Script from 'next/script'
 import Image from "next/image";
@@ -16,18 +19,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className="flex w-screen  justify-end items-center h-screen">
-          <div className=" border rounded-lg bg-yellow-100 border-black p-4 cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-200 duration-300">
-            <div className=" ">
-              <img
-                src="https://media.istockphoto.com/id/535695503/photo/pakistan-monument-islamabad.jpg?s=612x612&w=0&k=20&c=bNqjdf8L-5igcRB89DdMgx0kNOmyeo1J_zzXmoxxl8w="
-                className=" h-[200px]"
-              ></img>
+
+      <div id="card" class="flex justify-center items-center h-screen">
+        <div
+            class=" border rounded-lg bg-yellow-100 border-black p-4 cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-200 duration-300">
+            <div class=" ">
+                <img src="https://media.istockphoto.com/id/535695503/photo/pakistan-monument-islamabad.jpg?s=612x612&w=0&k=20&c=bNqjdf8L-5igcRB89DdMgx0kNOmyeo1J_zzXmoxxl8w="
+                    class=" h-[200px]"></img>
             </div>
-            <h1 className=" text-2xl font-bold">Hello</h1>
-            <p>Click Me!</p>
-          </div>
+            <div class="flex">
+                <div class="">
+                    <h1 class=" text-2xl font-bold">Hello</h1>
+                    <p>Click Me!</p>
+                </div>
+                <div class="justify-end flex w-full focus:outline-0">
+                    <button class=" focus:invisible">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        Close
+                    </button>
+                </div>
+            </div>
+
         </div>
+    </div>
       </main>
     </>
   );
